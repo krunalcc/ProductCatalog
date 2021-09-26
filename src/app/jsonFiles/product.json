@@ -1,0 +1,12 @@
+[{
+    "productId":1,
+    "productName": "Apple",
+    "productSKU": "SKU1",
+    "productPrice":  50
+},
+{
+    "productId":2,
+    "productName": "Banana",
+    "productSKU": "SKU2",
+    "productPrice":  5
+}]

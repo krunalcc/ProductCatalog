@@ -1,0 +1,14 @@
+﻿<!-- <h1>Hi {{currentUser.firstName}}!</h1> -->
+<!-- <h3>All registered users:</h3> -->
+<input type="text" placeholder="Search Products" [(ngModel)]="searchInput" (keyup)="searchTerm$.next(searchInput)" />
+<button (click)="addProduct()" style="display: flex;border: 1px solid black;border-radius: 15px;"> Add Product </button>
+<table class="table">
+    <th>Product Name</th>
+    <th>SKU</th>
+    <th>Price</th>
+    <tr *ngFor="let product of products">
+        <td>{{product.productName}}</td>
+        <td>{{product.productSKU}}</td>
+        <td>{{product.productPrice}}</td>
+    </tr>
+</table>
